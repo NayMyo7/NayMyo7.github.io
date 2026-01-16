@@ -75,17 +75,10 @@ body {
     opacity: 0.3;
 }
 
-.header-subtitle {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    opacity: 0.9;
-    position: relative;
-    z-index: 1;
-}
+
 
 .header-title {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
     position: relative;
@@ -95,6 +88,24 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: shimmer 3s ease-in-out infinite;
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.header-name {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
 }
 
 @keyframes shimmer {
