@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     initCarousel();
     initScrollAnimations();
+    setFooterYear();
 });
 
 function initSmoothScroll() {
@@ -117,6 +118,11 @@ function initScrollAnimations() {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
+}
+
+function setFooterYear() {
+    const el = document.getElementById('footer-year');
+    if (el) el.textContent = new Date().getFullYear();
 }
 
 window.addEventListener('scroll', function() {
