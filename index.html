@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="portfolio.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
     <div class="background-pattern"></div>
 
@@ -18,7 +20,7 @@
             <h3 class="header-title">Software Engineer • Java Developer • Mobile Developer</h3>
 
             <nav class="nav">
-                 <a href="#about" class="nav-link">
+                <a href="#about" class="nav-link">
                     <i data-feather="user"></i>
                     <span>About Me</span>
                 </a>
@@ -39,17 +41,21 @@
     </header>
 
     <main class="main-content">
-        <div class="container">
-            <section id="about" class="section about-section">
-                <h2 class="section-title">
-                    <i data-feather="user"></i>
-                    About Me
-                </h2>
+        <div id="about" class="container">
+            <h2 class="section-title">
+                <i data-feather="user"></i>
+                About Me
+            </h2>
+            <section class="section about-section">
+
                 <div class="about-grid">
                     <div class="about-content">
                         <p class="about-text">
-                            Hello! I'm Nay Myo Htet, a passionate <strong>Software Engineer</strong> with expertise in <strong>Java development</strong> and <strong>mobile applications</strong>.
-                            I specialize in building <strong>scalable backend systems</strong> and <strong>intuitive mobile experiences</strong>, focusing on clean architecture, performance optimization, and user-centered design.
+                            Hello! I'm Nay Myo Htet, a passionate <strong>Software Engineer</strong> with expertise in
+                            <strong>Java development</strong> and <strong>mobile applications</strong>.
+                            I specialize in building <strong>scalable backend systems</strong> and <strong>intuitive
+                                mobile experiences</strong>, focusing on clean architecture, performance optimization,
+                            and user-centered design.
                         </p>
                         <div class="info-cards">
                             <div class="info-card">
@@ -76,13 +82,14 @@
                 </div>
             </section>
 
-            <section id="work" class="section">
-                <h2 class="section-title">
-                    <i data-feather="briefcase"></i>
-                    Projects & Applications
-                </h2>
+            <!-- <section id="work" class="section"> -->
+            <h2 id="work" class="section-title">
+                <i data-feather="briefcase"></i>
+                Projects & Applications
+            </h2>
+            <!-- </section> -->
 
-                <!-- <div class="app-card">
+            <!-- <div class="app-card">
                     <div class="app-grid">
                         <div class="app-content">
                             <div class="app-header">
@@ -128,76 +135,88 @@
                     </div>
                 </div> -->
 
-                <div class="app-card">
-                    <div class="app-grid">
-                        <div class="app-content">
-                            <div class="app-header">
-                                <div>
-                                    <h3 class="app-title">N2 Kanji</h3>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag">Flutter</span>
-                                        <span class="tech-tag">Dart</span>
-                                        <span class="tech-tag">Material Design</span>
-                                    </div>
+            <div class="app-card">
+                <div class="app-grid">
+                    <div class="app-content">
+                        <div class="app-header">
+                            <div>
+                                <h3 class="app-title">N2 Kanji</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">Dart</span>
+                                    <span class="tech-tag">Material Design</span>
                                 </div>
-                                <div class="app-year">2019</div>
                             </div>
-                            <p class="app-description">
-                                N2 Kanji is your comprehensive companion for mastering Japanese N2 level kanji through interactive study modes, practice exercises, and beautiful stroke animations.
-                            </p>
-                            <ul class="feature-list">
-                                <li class="feature-item">
-                                    <i data-feather="check-circle"></i>
-                                    <span>Interactive kanji study with stroke animations</span>
-                                </li>
-                                <li class="feature-item">
-                                    <i data-feather="check-circle"></i>
-                                    <span>Multiple learning modes: flashcards, quizzes, and practice</span>
-                                </li>
-                                <li class="feature-item">
-                                    <i data-feather="check-circle"></i>
-                                    <span>Track your progress and favorite kanji</span>
-                                </li>
-                                <li class="feature-item">
-                                    <i data-feather="check-circle"></i>
-                                    <span>Comprehensive kanji dictionary with readings and meanings</span>
-                                </li>
-                            </ul>
-                            <div class="app-links">
-                                <a href="https://play.google.com/store/apps/details?id=com.dragondev.n2kanji" target="_blank" class="btn btn-primary">
-                                    <i data-feather="download"></i>
-                                    Download on Google Play
-                                </a>
-                            </div>
+                            <!-- <div class="app-year">2019</div> -->
                         </div>
-                        <div class="app-screenshots">
-                            <button class="carousel-btn carousel-btn-prev" aria-label="Previous screenshot">
-                                <i data-feather="chevron-left"></i>
-                            </button>
-                            <button class="carousel-btn carousel-btn-next" aria-label="Next screenshot">
-                                <i data-feather="chevron-right"></i>
-                            </button>
-                            <div class="carousel-track" id="n2kanji-carousel">
-                                <img src="images/n2kanji/000_n2kanji_drawer.png" alt="N2 Kanji Drawer" class="screenshot">
-                                <img src="images/n2kanji/001_n2kanji_study.png" alt="N2 Kanji Study" class="screenshot">
-                                <img src="images/n2kanji/002_n2kanji_flashcard.png" alt="N2 Kanji Flashcard" class="screenshot">
-                                <img src="images/n2kanji/003_n2kanji_quiz.png" alt="N2 Kanji Quiz" class="screenshot">
-                                <img src="images/n2kanji/004_n2kanji_search.png" alt="N2 Kanji Search" class="screenshot">
-                                <img src="images/n2kanji/005_n2kanji_favourites.png" alt="N2 Kanji Favourites" class="screenshot">
-                                <img src="images/n2kanji/006_n2kanji_worddetail.png" alt="N2 Kanji Word Detail" class="screenshot">
-                                <img src="images/n2kanji/007_n2kanji_practice.png" alt="N2 Kanji Practice" class="screenshot">
-                                <img src="images/n2kanji/008_n2kanji_aboutapp.png" alt="N2 Kanji About" class="screenshot">
-                            </div>
+                        <p class="app-description">
+                            N2 Kanji is your comprehensive companion for mastering Japanese N2 level kanji through
+                            interactive study modes, practice exercises, and beautiful stroke animations.
+                        </p>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <i data-feather="check-circle"></i>
+                                <span>Interactive kanji study with stroke animations</span>
+                            </li>
+                            <li class="feature-item">
+                                <i data-feather="check-circle"></i>
+                                <span>Multiple learning modes: flashcards, quizzes, and practice</span>
+                            </li>
+                            <li class="feature-item">
+                                <i data-feather="check-circle"></i>
+                                <span>Track your progress and favorite kanji</span>
+                            </li>
+                            <li class="feature-item">
+                                <i data-feather="check-circle"></i>
+                                <span>Comprehensive kanji dictionary with readings and meanings</span>
+                            </li>
+                        </ul>
+                        <div class="app-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.dragondev.n2kanji"
+                                target="_blank" class="store-btn">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                    alt="Get it on Google Play" class="store-badge">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/n2-kanji-master/id6757802869" target="_blank"
+                                class="store-btn">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                                    alt="Download on the App Store" class="store-badge">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-screenshots">
+                        <button class="carousel-btn carousel-btn-prev" aria-label="Previous screenshot">
+                            <i data-feather="chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" aria-label="Next screenshot">
+                            <i data-feather="chevron-right"></i>
+                        </button>
+                        <div class="carousel-track" id="n2kanji-carousel">
+                            <img src="images/n2kanji/000_n2kanji_drawer.png" alt="N2 Kanji Drawer" class="screenshot">
+                            <img src="images/n2kanji/001_n2kanji_study.png" alt="N2 Kanji Study" class="screenshot">
+                            <img src="images/n2kanji/002_n2kanji_flashcard.png" alt="N2 Kanji Flashcard"
+                                class="screenshot">
+                            <img src="images/n2kanji/003_n2kanji_quiz.png" alt="N2 Kanji Quiz" class="screenshot">
+                            <img src="images/n2kanji/004_n2kanji_search.png" alt="N2 Kanji Search" class="screenshot">
+                            <img src="images/n2kanji/005_n2kanji_favourites.png" alt="N2 Kanji Favourites"
+                                class="screenshot">
+                            <img src="images/n2kanji/006_n2kanji_worddetail.png" alt="N2 Kanji Word Detail"
+                                class="screenshot">
+                            <img src="images/n2kanji/007_n2kanji_practice.png" alt="N2 Kanji Practice"
+                                class="screenshot">
+                            <img src="images/n2kanji/008_n2kanji_aboutapp.png" alt="N2 Kanji About" class="screenshot">
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
 
-            <section id="skills" class="section skills-section">
-                <h2 class="section-title">
-                    <i data-feather="code"></i>
-                    Skills & Technologies
-                </h2>
+            <h2 id="skills" class="section-title">
+                <i data-feather="code"></i>
+                Skills & Technologies
+            </h2>
+            <section class="skills-section">
+
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3 class="skill-category-title">
@@ -256,14 +275,14 @@
                 </div>
             </section>
 
-            <section id="contact" class="section contact-section">
-                <h2 class="section-title">
-                    <i data-feather="mail"></i>
-                    Get In Touch
-                </h2>
+            <h2 id="contact" class="section-title">
+                <i data-feather="mail"></i>
+                Get In Touch
+            </h2>
+            <section class="section contact-section">
                 <p class="contact-description">
-                    Interested in collaborating on software projects, Java development opportunities, or mobile applications? Let's connect and build something amazing together!
-                </p>
+                    Interested in collaborating on software projects?
+                    <br>Let’s connect and build something amazing together!
                 <div class="contact-links">
                     <a href="https://github.com/NayMyo7" target="_blank" class="contact-link">
                         <i data-feather="github"></i>
@@ -290,4 +309,5 @@
 
     <script src="portfolio.js"></script>
 </body>
+
 </html>
